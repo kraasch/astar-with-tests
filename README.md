@@ -11,7 +11,7 @@ In a 2D maze of zeros and ones try to find a path from the start to the end
 node, if it exists. Steps allowed are only direct neighbors (should be possible
 to also allow weighted sideways steps later, as well as multi-dimensional
 spaces). Split up the 2D space into chunk using dividing lines with a thickness
-of two. (See picture below).
+of two. See image below.
 
 ![maze with zero and ones divided into chunks](./info/idea_00.png)
 
