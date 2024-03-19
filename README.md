@@ -25,6 +25,9 @@ Algorithm:
 
 ![a-star on chunk level](./info/idea_03.png)
 
+NOTE: after the connections between the chunks 0-7 have been analyzed in-chunk
+search of these eight chunks can run in parallel.
+
  - [ ] dynamically analyze dividers between chunks for connectivity.
  - [ ] if chunks are connected, try to search path thru them, otherwise optimize
        path thru other chunks.
@@ -54,7 +57,7 @@ Additional idea:
        end and from end to start to cut search time into half.
  - [ ] make it more likely to in-chunk search a chunk if it is more connected to
        other chunks.
- - [ ] use heuristic to choose different search algorithms for the in chunk
+ - [ ] use heuristic to choose different search algorithms for the in-chunk
        search (i.e. DFS or A-star).
 
 ## Meta
