@@ -3,6 +3,9 @@
 
 This is work in progress. The A-star algorithm has been tested already.
 
+The main idea is to chop down a maze into smaller problems which can be analyzed
+in parallel (i.e. multi-threaded environments).
+
 What remains to do is to test and implement the ideas below.
 
 ## Idea to speed up A-star algorithm
@@ -28,9 +31,10 @@ Algorithm:
 NOTE: after the connections between the chunks 0-7 have been analyzed in-chunk
 search of these eight chunks can run in parallel.
 
- - [ ] dynamically analyze dividers between chunks for connectivity.
- - [ ] if chunks are connected, try to search path thru them, otherwise optimize
-       path thru other chunks.
+ - [ ] dynamically analyze dividers between chunks for connectivity (chunk
+       exists).
+ - [ ] if chunks are connected via exits, try to search path thru them, 
+       otherwise optimize path thru other chunks.
  - [ ] in order to find each cell's connectivity analyze the surrounding divider
        cells as shown below. This can assign each cell the maximum of 8
        connected cells.
@@ -50,6 +54,11 @@ Results:
  - [ ] guarantee to find shortest paths, like a-star does.
  - [ ] allows for parallel execution, because each divider between two chunks
        and the chunks themselves can be analyzed by different threads.
+
+![result example](./info/idea_04.png)
+
+NOTE: a solution to a maze is a list chunk exits which are connected via an
+in-chunk path.
 
 Additional idea:
 
