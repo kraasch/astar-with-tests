@@ -18,7 +18,7 @@ of two. See image below.
 
 ![maze with zero and ones divided into chunks](./info/idea_00.png)
 
-NOTE: The cell size can be chosen dynamically. Start in cell 28C, end in 2Z.
+NOTE: The chunk size can be chosen dynamically. Start in cell 28C, end in 2Z.
 
 Algorithm:
 
