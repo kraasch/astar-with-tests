@@ -86,7 +86,14 @@ Additional idea:
  
  - how to use [google tests](https://github.com/google/googletest/blob/main/googletest/samples/sample1_unittest.cc), i.e. `"gtest/gtest.h"`
 
-## Misc resource (not yet read or watched)
+### Reference resources
+
+ - [ ] https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm
+ - [ ] https://en.wikipedia.org/wiki/Breadth-first_search
+ - [ ] https://en.wikipedia.org/wiki/Johnson%27s_algorithm
+ - [ ] https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
+
+### Misc resource (not yet read or watched)
 
  - https://www.youtube.com/watch?v=GC-nBgi9r0U
  - https://www.youtube.com/watch?v=-L-WgKMFuhE&list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW
