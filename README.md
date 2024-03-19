@@ -49,6 +49,9 @@ search of these eight chunks can run in parallel.
 
 ![connection example](./info/idea_02.png)
 
+NOTE: no costs for exits have to be analyzed, only the final path via these 
+exits will be assigned a cost.
+
 Results:
 
  - [ ] guarantee to find shortest paths, like a-star does.
@@ -57,8 +60,13 @@ Results:
 
 ![result example](./info/idea_04.png)
 
-NOTE: a solution to a maze is a list chunk exits which are connected via an
-in-chunk path.
+NOTE: The image shows a search at basic intensity where each pair of exits is
+only in-chunk searched if it aligns with the general direction between start and
+end node.
+
+A solution to a maze is a list chunk exits which are connected via an
+in-chunk path. In the above image for example, the right paths do not connect
+the start node with the end node.
 
 Additional idea:
 
