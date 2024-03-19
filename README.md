@@ -21,7 +21,10 @@ Algorithm:
 
  - [ ] similar to a-star on cell level, have two lists of chunks to search.
  - [ ] expand list of chunks according to simple heuristic, e.g. estimated
-       shortest path to end node.
+       shortest path to end node. See image below.
+
+![a-star on chunk level](./info/idea_03.png)
+
  - [ ] dynamically analyze dividers between chunks for connectivity.
  - [ ] if chunks are connected, try to search path thru them, otherwise optimize
        path thru other chunks.
