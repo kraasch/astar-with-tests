@@ -62,6 +62,11 @@ in-chunk path.
 
 Additional idea:
 
+ - [ ] heuristically increase the intensity for the in-chunk search. At first
+       search only from exits close to start to exits close to end. If that is
+       not enough, increase the cost of the in-chunk search and do a full NxM
+       search for every exit (i.e. find a path from each exit to any of the
+       other exits; one direction of the two directions is obviously enough).
  - [ ] let the chunk-level a-star algorithm operate simultaneously from start to
        end and from end to start to cut search time into half.
  - [ ] make it more likely to in-chunk search a chunk if it is more connected to
