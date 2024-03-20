@@ -10,6 +10,10 @@ What remains to do is to test and implement the ideas below.
 
 ## Idea to speed up A-star algorithm
 
+Different ideas to speed up a-star.
+
+### Run A-star on Chunk-Level
+
 In a 2D maze of zeros and ones try to find a path from the start to the end
 node, if it exists. Steps allowed are only direct neighbors (should be possible
 to also allow weighted sideways steps later, as well as multi-dimensional
@@ -81,6 +85,17 @@ Additional idea:
        other chunks.
  - [ ] use heuristic to choose different search algorithms for the in-chunk
        search (i.e. DFS or A-star).
+
+### Detect type of Maze
+
+ 1. Chop up maze.
+ 2. Run across walls
+ 3. Check if walls are connected to sides of map.
+ 4. Choose search accordingly.
+
+<center><img src='./info/analysis_00.png' alt="pre-analysis results" width="300"/></center>
+NOTE: image shows different wall types. BLACK - islands, BLUE/RED - unsearched
+or connected.
 
 ## Meta
  
